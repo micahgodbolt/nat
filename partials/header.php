@@ -1,6 +1,6 @@
 <a href="#" class="logo">Crispin & Mulberry <span class="tag-line">World Travelers</span></a>
 <aside class="search-links">
-  <input class="site-search">
+  <div class="search-container"><input class="site-search" placeholder="search"></div>
   <nav class="secondary-links">
    <ul>
      <li><a href="#" class="navigation-link">My Account</a></li>

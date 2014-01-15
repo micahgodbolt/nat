@@ -4,54 +4,38 @@ body {
   background-repeat: no-repeat;
 }
 .page {
-  background: white;
+
 }
 
 header {
-  background: #ddd;
 }
 
 nav {
-  background: #ccc;
 }
 
 .hero {
-  min-height: 200px;
-  background: #aaa;
+  background: #fff;
    .hero-slider {
-    min-height: 200px;
-    background: pink;
   }
   .ad-block {
-    min-height: 200px;
-    background: green;
   }
 }
 
 .content {
-  min-height: 200px;
-  background: #999;
+  background: #fff;
 }
 
 .main-content {
-  min-height: 200px;
-  background: #666;
   .browse-categories {
-    min-height: 200px;
-    background: yellow;
   }
   .recent-articles {
-    min-height: 200px;
-    background: blue;
   }
 }
 
 .secondary-content {
-  min-height: 200px;
-  background: #555;
+  background: #fff;
 }
 
 footer {
-  min-height: 200px;
-  background: #333;
+  background: #2c2c2c;
 }

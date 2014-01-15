@@ -1,0 +1,5 @@
+.main-navigation{
+  ul {
+    @extend %reset-nav;
+  }
+}

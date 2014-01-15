@@ -1,3 +1,90 @@
+/* line 1, ../sass/global/extends/_decorative-extends.scss */
+header .secondary-links ul, .main-navigation ul {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 4, ../sass/global/extends/_decorative-extends.scss */
+header .secondary-links ul a, .main-navigation ul a {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/base/html/_html.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 143, sprites/*.png */
+.sprites-sprite, .sprites-envelope, .sprites-facebook, .sprites-flickr, .sprites-folder, .sprites-logo, header .logo, .sprites-play-button, .sprites-recent-articles, .sprites-rss, .sprites-search, header .search-container:after, .sprites-trophy, .sprites-twitter, .sprites-video, .sprites-vimeo {
+  background-image: url('/img/sprites-s5131e22d10.png');
+  background-repeat: no-repeat;
+}
+
+/* line 77, ../../../.rvm/gems/ruby-1.9.3-p374/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.sprites-envelope {
+  background-position: 0 0;
+}
+
+/* line 77, ../../../.rvm/gems/ruby-1.9.3-p374/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.sprites-facebook {
+  background-position: 0 -11px;
+}
+
+/* line 77, ../../../.rvm/gems/ruby-1.9.3-p374/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.sprites-flickr {
+  background-position: 0 -37px;
+}
+
+/* line 77, ../../../.rvm/gems/ruby-1.9.3-p374/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.sprites-folder {
+  background-position: 0 -63px;
+}
+
+/* line 77, ../../../.rvm/gems/ruby-1.9.3-p374/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.sprites-logo, header .logo {
+  background-position: 0 -75px;
+}
+
+/* line 77, ../../../.rvm/gems/ruby-1.9.3-p374/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.sprites-play-button {
+  background-position: 0 -160px;
+}
+
+/* line 77, ../../../.rvm/gems/ruby-1.9.3-p374/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.sprites-recent-articles {
+  background-position: 0 -200px;
+}
+
+/* line 77, ../../../.rvm/gems/ruby-1.9.3-p374/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.sprites-rss {
+  background-position: 0 -216px;
+}
+
+/* line 77, ../../../.rvm/gems/ruby-1.9.3-p374/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.sprites-search, header .search-container:after {
+  background-position: 0 -242px;
+}
+
+/* line 77, ../../../.rvm/gems/ruby-1.9.3-p374/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.sprites-trophy {
+  background-position: 0 -255px;
+}
+
+/* line 77, ../../../.rvm/gems/ruby-1.9.3-p374/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.sprites-twitter {
+  background-position: 0 -266px;
+}
+
+/* line 77, ../../../.rvm/gems/ruby-1.9.3-p374/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.sprites-video {
+  background-position: 0 -292px;
+}
+
+/* line 77, ../../../.rvm/gems/ruby-1.9.3-p374/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.sprites-vimeo {
+  background-position: 0 -304px;
+}
+
 /* line 3, ../sass/base/html/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: helvetica, arial, sans-serif;
@@ -45,69 +132,24 @@ body {
   background-repeat: no-repeat;
 }
 
-/* line 6, ../sass/base/page/_page.scss */
-.page {
-  background: white;
-}
-
-/* line 10, ../sass/base/page/_page.scss */
-header {
-  background: #ddd;
-}
-
-/* line 14, ../sass/base/page/_page.scss */
-nav {
-  background: #ccc;
-}
-
-/* line 18, ../sass/base/page/_page.scss */
+/* line 16, ../sass/base/page/_page.scss */
 .hero {
-  min-height: 200px;
-  background: #aaa;
-}
-/* line 21, ../sass/base/page/_page.scss */
-.hero .hero-slider {
-  min-height: 200px;
-  background: pink;
-}
-/* line 25, ../sass/base/page/_page.scss */
-.hero .ad-block {
-  min-height: 200px;
-  background: green;
+  background: #fff;
 }
 
-/* line 31, ../sass/base/page/_page.scss */
+/* line 24, ../sass/base/page/_page.scss */
 .content {
-  min-height: 200px;
-  background: #999;
+  background: #fff;
 }
 
-/* line 36, ../sass/base/page/_page.scss */
-.main-content {
-  min-height: 200px;
-  background: #666;
-}
-/* line 39, ../sass/base/page/_page.scss */
-.main-content .browse-categories {
-  min-height: 200px;
-  background: yellow;
-}
-/* line 43, ../sass/base/page/_page.scss */
-.main-content .recent-articles {
-  min-height: 200px;
-  background: blue;
-}
-
-/* line 49, ../sass/base/page/_page.scss */
+/* line 35, ../sass/base/page/_page.scss */
 .secondary-content {
-  min-height: 200px;
-  background: #555;
+  background: #fff;
 }
 
-/* line 54, ../sass/base/page/_page.scss */
+/* line 39, ../sass/base/page/_page.scss */
 footer {
-  min-height: 200px;
-  background: #333;
+  background: #2c2c2c;
 }
 
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
@@ -516,7 +558,44 @@ table {
   border-spacing: 0;
 }
 
-/* No files to import found in components/**\/* */
+/* line 14, ../sass/components/_header.scss */
+header {
+  padding: 1.25em 0;
+}
+/* line 16, ../sass/components/_header.scss */
+header .search-container {
+  position: relative;
+}
+/* line 18, ../sass/components/_header.scss */
+header .search-container:after {
+  content: "";
+  height: 13px;
+  width: 14px;
+  position: absolute;
+  top: 0.3125em;
+  right: 0.3125em;
+}
+/* line 27, ../sass/components/_header.scss */
+header .logo {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 85px;
+  width: 270px;
+  display: block;
+}
+
+/* line 14, ../sass/layout/_header-layout.scss */
+header {
+  position: relative;
+}
+/* line 16, ../sass/layout/_header-layout.scss */
+header .search-links {
+  position: absolute;
+  right: 0;
+  top: 1.875em;
+}
+
 /* line 1, ../sass/layout/_page-layout.scss */
 .page {
   max-width: 62.5em;
@@ -600,8 +679,12 @@ table {
   *margin-left: -1.25em;
   display: inline;
 }
+/* line 37, ../sass/layout/_page-layout.scss */
+.main-content .popular-videos {
+  clear: both;
+}
 
-/* line 39, ../sass/layout/_page-layout.scss */
+/* line 42, ../sass/layout/_page-layout.scss */
 .secondary-content {
   width: 23.5%;
   float: left;
@@ -613,7 +696,7 @@ table {
   display: inline;
 }
 
-/* line 44, ../sass/layout/_page-layout.scss */
+/* line 47, ../sass/layout/_page-layout.scss */
 footer {
   *zoom: 1;
   max-width: 62.5em;

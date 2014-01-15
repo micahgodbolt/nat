@@ -6,6 +6,17 @@
   margin: -1px; padding: 0; border: 0;
 }
 
+@mixin hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin get-img-size($img) {
+  height: image-height($img);
+  width: image-width($img);
+}
+
 @mixin clearfix {
   &:before, &:after {
       content: "\0020";
