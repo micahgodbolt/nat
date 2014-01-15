@@ -9,6 +9,18 @@
   padding: 0 pem(15);
 }
 
+%inverted-title-offset {
+  position: relative;
+  margin-left: -33px;
+  &:after {
+    content: "";
+    @include get-sprite(blue-shadow, false);
+    position: absolute;
+    bottom: (image-height('sprites/blue-shadow.png') * -1 );
+    left: 0;
+  }
+}
+
 %sidebar-title {
   color: $black;
   font-size: $upper-header-font-size;
@@ -34,4 +46,18 @@
       color: $primary-color;
     }
   }
+}
+
+%hero-primary-title {
+  display: block;
+  color: $black;
+  font-size: pem(24);
+  font-weight: bold;
+}
+
+%hero-secondary-title {
+  display: block;
+  color: $black;
+  font-size: pem(14);
+  font-weight: 400;
 }

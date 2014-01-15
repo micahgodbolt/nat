@@ -1,4 +1,4 @@
-@mixin get-sprite($name, $icon: false, $top: 0) {
+@mixin get-sprite($name, $icon: false, $top:0) {
   @if $icon {
     &:before {
       content: "";

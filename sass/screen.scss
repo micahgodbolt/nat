@@ -1,7 +1,9 @@
 @import "compass";
 @import "susy";
+
 @import "global/functions";
 @import "global/variables";
+@import "global/mixins/**/*";
 @import "global/extends/**/*";
 @import "global/mixins/**/*";
 

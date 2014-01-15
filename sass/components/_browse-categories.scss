@@ -1,6 +1,7 @@
 .browse-categories {
   .title {
     @extend %inverted-title;
+    @extend %inverted-title-offset;
     @include get-sprite(folder, true);
     &:before {
       top: pem(2);

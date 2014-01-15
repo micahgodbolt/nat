@@ -1,0 +1,91 @@
+//  <div class="hero-slider">
+
+//   <ul class="slider-items">
+//     <li class="slider-item">
+//       <img src=""><a href="#" class="slider-item-link">
+//       <span class="slider-item-title">Downtown Baltimore </span>
+//       <span class="slider-item-description">Check out the USS Torsk at Baltimore's historic Maritime Museum</span></a>
+//     </li>
+//     <li class="slider-item">
+//       <img src=""><a href="#" class="slider-item-link">
+//       <span class="slider-item-title">Exploring the Venetian</span>
+//       <span class="slider-item-description">Enjoy the best gondola ride on this side of the Atlantic Ocean.</span></a>
+//     </li>
+//     <li class="slider-item">
+//       <img src=""><a href="#" class="slider-item-link">
+//       <span class="slider-item-title">London After Dark</span>
+//       <span class="slider-item-description">Enjoy the pubs along the river Thames & get spectacular view from the London Eye.</span></a>
+//     </li>
+//     <li class="slider-item">
+//       <img src=""><a href="#" class="slider-item-link">
+//       <span class="slider-item-title">Mount Rushmore</span>
+//       <span class="slider-item-description">Marvel at the majestic beauty of the Black Hills and come face to face with American history.</span></a>
+//     </li>
+//   </ul>
+
+
+//   <ul class="slider-navigation">
+//     <li><a href="#" class="slider-nav-link">Downtown Baltimore</a></li>
+//     <li><a href="#" class="slider-nav-link">Exploring the Venetian</a></li>
+//     <li><a href="#" class="slider-nav-link">London After Dark</a></li>
+//     <li><a href="#" class="slider-nav-link">Mount Rushmore</a></li>
+//   </ul>
+
+// </div>
+
+.hero-slider {
+  .slider-items {
+    @extend %reset-list;
+    // force size of container to be height of image (331/666 = 50%)
+    padding-bottom: 50%;
+    margin-bottom: pem(20);
+  }
+  .slider-item {
+    visibility: hidden;
+    &.active {
+      visibility: visible;
+    }
+  }
+  .slider-item-link {
+    background: $white; // fallback
+    background: rgba($white,.7);
+    padding: pem(11) pem(15) pem(15);
+  }
+  .slider-item-title {
+    @extend %hero-primary-title;
+  }
+  .slider-item-description {
+    @extend %hero-secondary-title;
+  }
+}
+
+.slider-navigation {
+  @extend %reset-list;
+  li {
+    border: 3px solid white;
+    &.active {
+      position: relative;
+      border: 3px solid $primary-color;
+      @include get-sprite(blue-arrow, true, 0);
+      &:before {
+        // reposition blue-arrow
+        position: absolute;
+        top: pem(-12);
+        left: 50%;
+        margin-left: pem(-4);
+      }
+    }
+  }
+  .slider-nav-link {
+    display: block;
+  }
+  img {
+    // fix space below image
+    display: block;
+  }
+  span {
+    // hide link text without removing it from screen readers
+    position: absolute;
+    visibility: hidden;
+  }
+}

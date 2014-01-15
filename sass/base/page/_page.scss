@@ -1,8 +1,9 @@
-body {
-  background: url('/img/background.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
+.wrapper {
+  background-image: url('/img/background.jpg');
+  background-position: top center;
+  background-size: cover;
 }
+
 .page {
 
 }
@@ -15,6 +16,17 @@ nav {
 
 .hero {
   background: #fff;
+  padding: pem(20) 0;
+  position: relative;
+  &:before {
+    content: "";
+    background: $grey;
+    bottom: 0;
+    left: $grid-padding;
+    right: $grid-padding;
+    height: 1px;
+    position: absolute;
+  }
    .hero-slider {
   }
   .ad-block {
@@ -22,6 +34,7 @@ nav {
 }
 
 .content {
+  padding-top: pem(20);
   background: #fff;
 }
 

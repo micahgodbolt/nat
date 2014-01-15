@@ -1,0 +1,9 @@
+.ad-block {
+  a {
+    display: block;
+    margin-bottom: pem(23);
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
