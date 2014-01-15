@@ -1,0 +1,15 @@
+.recent-articles {
+  .title {
+    @extend %inverted-title;
+    @include get-sprite(recent-articles, true, 4);
+  }
+  article {
+    margin-bottom: pem(20);
+  }
+  .article-title {
+    @extend %secondary-title;
+  }
+  p {
+    @extend %standard-copy;
+  }
+}

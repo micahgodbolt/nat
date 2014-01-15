@@ -13,11 +13,10 @@ nav {
 .hero {
   @include container;
   .hero-slider {
-    @include span-columns(9);
+    @include span-columns(7);
   }
   .ad-block {
-    @include span-columns(3);
-    @include omega();
+    @include span-columns(3 omega);
   }
 }
 
@@ -26,13 +25,12 @@ nav {
 }
 
 .main-content {
-  @include span-columns(9);
+  @include span-columns(7);
   .browse-categories {
-    @include span-columns(2,9);
+    @include span-columns(2,7);
   }
   .recent-articles {
-    @include span-columns(7,9);
-    @include omega();
+    @include span-columns(5 omega,7);
   }
   .popular-videos {
     clear: both
@@ -40,8 +38,7 @@ nav {
 }
 
 .secondary-content {
-  @include span-columns(3);
-  @include omega();
+  @include span-columns(3 omega);
 }
 
 footer {

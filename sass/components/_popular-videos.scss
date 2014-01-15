@@ -1,0 +1,51 @@
+// <div class="popular-videos">
+//   <h2 class="title">Popular Videos</h2>
+//   <div class="videos">
+//     <ul>
+//       <li><a href="#" class="video">
+//         <img src="#"><span class="description">Team Mongoose</span>
+//       </a></li>
+//       <li><a href="#" class="video">
+//         <img src="#"><span class="description">St Paul's Cathedral</span>
+//       </a></li>
+//       <li><a href="#" class="video">
+//         <img src="#"><span class="description">Hollywood and Highland</span>
+//       </a></li>
+//       <li><a href="#" class="video">
+//         <img src="#"><span class="description">Lake Wissota</span>
+//       </a></li>
+//       <li><a href="#" class="video">
+//         <img src="#"><span class="description">The Bellagio Fountains</span>
+//       </a></li>
+//       <li><a href="#" class="video">
+//         <img src="#"><span class="description">The Atlantic Coast</span>
+//       </a></li>
+//     </ul>
+//   </div>
+
+// </div>
+
+.popular-videos {
+  .title {
+    @extend %inverted-title;
+    @include get-sprite(video, true, 1);
+  }
+  .videos ul {
+    @extend %reset-list;
+  }
+  .videos li {
+    margin-bottom: pem(15);
+  }
+  .video {
+    display: block;
+  }
+  .description {
+    line-height: pem(40,13);
+    font-size: pem(13);
+    padding: 0 pem(15);
+    background: $white;
+    background: rgba($white, .7);
+    color: $black;
+    font-weight: bold;
+  }
+}

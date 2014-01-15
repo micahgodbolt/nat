@@ -1,5 +1,48 @@
-.main-navigation{
+// <ul>
+//   <li><a href="#" class="navigation-link">Destinations</a></li>
+//   <li><a href="#" class="navigation-link">Getaways</a></li>
+//   <li><a href="#" class="navigation-link">Travel Tips</a></li>
+//   <li><a href="#" class="navigation-link active">News & Features</a></li>
+//   <li><a href="#" class="navigation-link">Contests</a></li>
+//   <li><a href="#" class="navigation-link">Contact Us</a></li>
+// </ul>
+
+
+.main-navigation {
   ul {
-    @extend %reset-nav;
+    @extend %reset-list;
+    @include clearfix;
+    @include background(linear-gradient(lighten($light-grey,15%), darken($light-grey, 0)));
+  }
+  li {
+
+  }
+
+  .navigation-link {
+    text-align: center;
+    font-size: $nav-font-size;
+    text-transform: uppercase;
+    color: $grey;
+    line-height: pem(38, 12);
+    @include text-shadow(1px 1px 1px rgba($white,.4));
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+    &:hover {
+      background: rgba($black, .1);
+    }
+
+    // layout
+    float: left;
+    width: 16.6667%;
+    &.active {
+      border-left: 1px solid #bdbdbd;
+      border-right: 1px solid #bdbdbd;
+      border-bottom: 0 solid $white;
+      background: $white;
+      position: relative;
+      top: 1px;
+      padding-top: 7px;
+      margin-top: -7px;
+    }
   }
 }

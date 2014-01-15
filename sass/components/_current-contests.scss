@@ -1,0 +1,24 @@
+.current-contests {
+  @extend %sidebar-box;
+  @include clearfix;
+  margin-bottom: pem(20);
+  .title {
+    @extend %sidebar-title;
+    @include get-sprite(trophy, true, 2);
+    margin-bottom: pem(15);
+  }
+  .contest {
+    @include clearfix;
+    margin-bottom: pem(10);
+    clear: both;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .contest-link {
+    @extend %heavy-copy-links;
+  }
+  .contest-description {
+    margin: 0 0 pem(10);
+  }
+}

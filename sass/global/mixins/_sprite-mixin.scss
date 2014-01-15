@@ -1,0 +1,17 @@
+@mixin get-sprite($name, $icon: false, $top: 0) {
+  @if $icon {
+    &:before {
+      content: "";
+      display: inline-block;
+      @extend .sprites-#{$name};
+      @include get-img-size('sprites/#{$name}.png');
+      position: relative;
+      top: pem($top);
+      padding-right: pem(9);
+    }
+  }
+  @else {
+    @extend .sprites-#{$name};
+    @include get-img-size('sprites/#{$name}.png');
+  }
+}

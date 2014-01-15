@@ -1,0 +1,37 @@
+%inverted-title {
+  color: $white;
+  background: $primary-color;
+  font-size: $upper-header-font-size;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: pem(35, 12);
+  margin: 0 0 pem(20);
+  padding: 0 pem(15);
+}
+
+%sidebar-title {
+  color: $black;
+  font-size: $upper-header-font-size;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: pem(10);
+  margin: 0 0 pem(10);
+  border-bottom: 1px solid $black;
+  line-height: 1;
+}
+
+
+%secondary-title {
+  margin: 0 0 pem(12);
+  color: $black;
+  font-size: $header-font-size;
+  font-weight: bold;
+  // in case the title includes a link
+  a {
+    color: $black;
+    text-decoration: none;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

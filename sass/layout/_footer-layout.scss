@@ -1,0 +1,8 @@
+footer {
+  .privacy-terms-copyright {
+    @include span-columns(6,12);
+  }
+  .social-links {
+    @include span-columns(6 omega,12);
+  }
+}

@@ -1,0 +1,52 @@
+.newsletter-signup {
+  @extend %sidebar-box;
+  @include clearfix;
+  .title {
+    @extend %sidebar-title;
+    @include get-sprite(envelope, true, 1);
+    margin-bottom: pem(16);
+  }
+  .email-field {
+    @extend %text-input-field;
+    margin-bottom: pem(16);
+  }
+  .form-options {
+    background: #cac9c9;
+    padding: pem(10);
+    margin-bottom: pem(10);
+  }
+  .directions {
+    margin: 0 0 pem(12);
+    font-size: pem(12);
+    font-style: italic;
+  }
+  label {
+    margin-left: pem(8);
+    font-size: pem(12);
+    font-weight: bold;
+    line-height: 1.8;
+  }
+  button {
+    float: right;
+    @include button($primary-color);
+  }
+}
+
+.disclaimer {
+  background: #cac9c9;
+  text-align: center;
+  border-top: 1px solid #969696;
+  padding: pem(6) 0 pem(3);
+  margin-bottom: pem(20);
+  ul {
+    display: inline-block;
+    @extend %reset-list;
+    @extend %horizontal-list;
+    li {
+      border-color: $black;
+    }
+    a {
+      color: $black;
+    }
+  }
+}

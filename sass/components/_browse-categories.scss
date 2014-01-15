@@ -1,0 +1,19 @@
+.browse-categories {
+  .title {
+    @extend %inverted-title;
+    @include get-sprite(folder, true);
+    &:before {
+      top: pem(2);
+    }
+  }
+  .section-title {
+    @extend %secondary-title;
+  }
+  .categories {
+    @extend %reset-list;
+    margin-bottom: pem(15);
+  }
+  .category {
+    @extend %copy-links;
+  }
+}

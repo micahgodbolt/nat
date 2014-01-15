@@ -1,6 +1,10 @@
 // <a href="#" class="logo">Crispin & Mulberry <span class="tag-line">World Travelers</span></a>
 // <aside class="search-links">
-//   <input class="site-search">
+//   <div class="search-container">
+//     <form>
+//       <input class="site-search" placeholder="search">
+//     </form>
+//   </div>
 //   <nav class="secondary-links">
 //    <ul>
 //      <li><a href="#" class="navigation-link">My Account</a></li>
@@ -17,20 +21,23 @@ header {
     position: relative;
     &:after {
       content: "";
-      @extend .sprites-search;
-      @include get-img-size('sprites/search.png');
+      @include get-sprite(search);
       position: absolute;
-      top: pem(5);
-      right: pem(5);
+      top: pem(7);
+      right: pem(7);
     }
+  }
+  .site-search {
+    @extend %text-input-field;
   }
   .logo {
     @include hide-text;
-    @extend .sprites-logo;
-    @include get-img-size('sprites/logo.png');
+    @include get-sprite(logo);
     display: block;
   }
   .secondary-links ul{
-    @extend %reset-nav;
+    margin-top: pem(18);
+    @extend %reset-list;
+    @extend %horizontal-list;
   }
 }

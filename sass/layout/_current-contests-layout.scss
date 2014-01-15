@@ -1,0 +1,8 @@
+.current-contests {
+  .contest-image {
+    @include span-columns(1,3);
+  }
+  .contest-description {
+    @include span-columns(2 omega,3);
+  }
+}

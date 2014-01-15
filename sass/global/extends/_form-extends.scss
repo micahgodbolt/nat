@@ -1,0 +1,8 @@
+%text-input-field {
+  font-size: $nav-font-size;
+  color: $grey;
+  width: 100%;
+  padding: pem(8) pem(8) pem(6);
+  border: 1px solid darken($light-grey, 10%);
+  @include box-shadow(inset 0 0 4px rgba($black,.2));
+}

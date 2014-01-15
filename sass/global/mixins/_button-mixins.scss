@@ -1,0 +1,13 @@
+@mixin button($bg, $color:$white) {
+  display: inline-block;
+  line-height: 1;
+  padding: pem(8) pem(18);
+  background: $bg;
+  color: $color;
+  text-transform: uppercase;
+  font-size: pem(12);
+  border: none;
+  &:hover {
+    background: darken($bg, 10%);
+  }
+}

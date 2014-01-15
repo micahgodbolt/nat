@@ -1,0 +1,18 @@
+%copy-links {
+  font-size: $copy-font-size;
+  color: $black;
+  font-weight: 100;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+%heavy-copy-links {
+  font-size: pem(12);
+  color: $black;
+  text-decoration: none;
+  font-weight: 600;
+  &:hover {
+    color: $primary-color;
+  }
+}
