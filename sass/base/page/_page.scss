@@ -1,0 +1,57 @@
+body {
+  background: url('/img/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page {
+  background: white;
+}
+
+header {
+  background: #ddd;
+}
+
+nav {
+  background: #ccc;
+}
+
+.hero {
+  min-height: 200px;
+  background: #aaa;
+   .hero-slider {
+    min-height: 200px;
+    background: pink;
+  }
+  .ad-block {
+    min-height: 200px;
+    background: green;
+  }
+}
+
+.content {
+  min-height: 200px;
+  background: #999;
+}
+
+.main-content {
+  min-height: 200px;
+  background: #666;
+  .browse-categories {
+    min-height: 200px;
+    background: yellow;
+  }
+  .recent-articles {
+    min-height: 200px;
+    background: blue;
+  }
+}
+
+.secondary-content {
+  min-height: 200px;
+  background: #555;
+}
+
+footer {
+  min-height: 200px;
+  background: #333;
+}

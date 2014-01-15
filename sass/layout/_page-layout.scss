@@ -1,0 +1,46 @@
+.page {
+  max-width: pem(1000);
+  margin: 0 auto;
+}
+
+header {
+}
+
+nav {
+
+}
+
+.hero {
+  @include container;
+  .hero-slider {
+    @include span-columns(9);
+  }
+  .ad-block {
+    @include span-columns(3);
+    @include omega();
+  }
+}
+
+.content {
+  @include container;
+}
+
+.main-content {
+  @include span-columns(9);
+  .browse-categories {
+    @include span-columns(2,9);
+  }
+  .recent-articles {
+    @include span-columns(7,9);
+    @include omega();
+  }
+}
+
+.secondary-content {
+  @include span-columns(3);
+  @include omega();
+}
+
+footer {
+  @include container;
+}
