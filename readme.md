@@ -5,10 +5,10 @@
 ### Project Considerations
 * While 'pixels perfection' is an ideal to be strived for, small provisions were made in order to adhere to a 10 column grid.
 * Though not yet "responsive", this site was built with 'mobile-first' in mind. With everything set to a grid, and no fixed width values, we simply need to change the body "width" to "max-width" to allow the site to shrink with the browser window. Then we just rebuild the grid layout with media queries.
-* A sprite sheet has been created to handle the various icons in this design. If SVGs were available it would be prefered to create a custom icon-font using [font-custom.com](http://font-custom.com/). This method would allow for great flexibility (change icon color, add text shadow etc) and would provide 'retina' support for hi-DPI devices.
+* A sprite sheet has been created to handle the various icons in this design. If SVGs were available it would be prefered to create a custom icon-font using [fontcustom.com](http://fontcustom.com/). This method would allow for greater flexibility (change icon color, add text shadow etc) and would provide 'retina' support for hi-DPI devices.
 
 ### Project Features
-* A styleguide was created to demonstrate the various text treatments and colors used on the site.
+* A [styleguide](http://nat.godbolt.me/styleguide.php) was created to demonstrate the various text treatments and colors used on the site.
     * These reusable pieces can and should be refered to by name when creating new content, or requesting changes to a title, link or color.
     * This styleguide is pulled directly from the site's CSS. So any changes made to the site will be reflected automaticaly in the styleguide.
 * Newly supported [sourcemaps] (https://developers.google.com/chrome-developer-tools/docs/css-preprocessors) have been used on this project. This means that in chrome (with the proper settings enabled) you can inspect an element, and view which sass partial each selector and associated styles came from.
@@ -20,7 +20,7 @@
 3. Navigate to the project via your command line and run ```bundle install```. This will download all of the required gems for the project
 4. From that same directory, run ```compass watch``` to start compiling Sass into css.
 5. To enable Chrome 'sourcemaps' use this more vurbose command instead ```sudo sass --compass --sourcemap --watch sass/screen.scss:stylesheets/screen.css```
-6. As this page uses PHP to include HTMl partials, it will need to be run on a PHP server like MAMP.
+6. As this page uses PHP to include HTML partials, it will need to be ran on a PHP server like MAMP.
 
 ### File Organization
 * **img/sprites** - All png's placed into this folder get compiled into a singular sprite sheet, and Compass calculates the necessary background-position to use each one.
