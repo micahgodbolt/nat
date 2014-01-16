@@ -1,8 +1,18 @@
-### What is Sass
-From [sass-lang.com](http://sass-lang.com/):
-"Sass is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more. It’s translated to well-formatted, standard CSS using the command line tool or a web-framework plugin."
+[Live Site](http://nat.godbolt.me)
 
-We use Sass to give structure, order, and power to our stylesheets. This document will explain how to set up a Sass environment for your local development, and supply a basic understand of file structure of this project.
+[Live Styleguide](http://nat.godbolt.me/styleguide.php)
+
+### Project Considerations
+* While 'pixels perfection' is an ideal to be strived for, small provisions were made in order to adhere to a 10 column grid.
+* Though not yet "responsive", this site was built with 'mobile-first' in mind. With everything set to a grid, and no fixed width values, we simply need to change the body "width" to "max-width" to allow the site to shrink with the browser window. Then we just rebuild the grid layout with media queries.
+* A sprite sheet has been created to handle the various icons in this design. If SVGs were available it would be prefered to create a custom icon-font using [font-custom.com](http://font-custom.com/). This method would allow for great flexibility (change icon color, add text shadow etc) and would provide 'retina' support for hi-DPI devices.
+
+### Project Features
+* A styleguide was created to demonstrate the various text treatments and colors used on the site.
+    * These reusable pieces can and should be refered to by name when creating new content, or requesting changes to a title, link or color.
+    * This styleguide is pulled directly from the site's CSS. So any changes made to the site will be reflected automaticaly in the styleguide.
+* Newly supported [sourcemaps] (https://developers.google.com/chrome-developer-tools/docs/css-preprocessors) have been used on this project. This means that in chrome (with the proper settings enabled) you can inspect an element, and view which sass partial each selector and associated styles came from.
+    * Additionally, you can cmd+click any attribute or value to jump directly to the partial, mixin, extend or variable responsible for it.
 
 ### Installation and Setup
 1. Install Ruby on your machine. If you’re using OS X, you’ll already have Ruby installed. Windows users can install Ruby via the [Windows installer](http://rubyinstaller.org/downloads/), and Linux users can install it via their package manager.
@@ -10,6 +20,8 @@ We use Sass to give structure, order, and power to our stylesheets. This documen
 3. Navigate to the project via your command line and run ```bundle install```. This will download all of the required gems for the project
 4. From that same directory, run ```compass watch``` to start compiling Sass into css.
 5. To enable Chrome 'sourcemaps' use this more vurbose command instead ```sudo sass --compass --sourcemap --watch sass/screen.scss:stylesheets/screen.css```
+6. As this page uses PHP to include HTMl partials, it will need to be run on a PHP server like MAMP.
+
 ### File Organization
 * **img/sprites** - All png's placed into this folder get compiled into a singular sprite sheet, and Compass calculates the necessary background-position to use each one.
 * **partials** - HTML components are broken up into php partials with similar naming to the Sass components mentioned below. This provides a clear picture of the site's region structure and allows for easier editing of each piece of component code.
@@ -33,8 +45,3 @@ We use Sass to give structure, order, and power to our stylesheets. This documen
 * Even if the style is only used once right now, creating it as an extend allows it to reused later, and keeps all of the title, copy, and decorative styles in a single place.
 * By convention, we use the silent placeholder for any extend we create ```%extend-name```. This reduces the risk of extending more than one class, and helps to denote that this extend can be found in the extends folder.
 * Decorative extends like image borders/rounded corners and box styles, like sidebar block backgrounds and borders, can also be found in the extends folder. This way it does not matter if we are applying this style to all of the sidebar blocks at once, or if we are applying it in every sidebar component partial, the styles can always be modified in the same place.
-
-### Project Considerations
-* While 'pixels perfection' is an ideal to be strived for, small provisions were made in order to adhere to a 10 column grid. This adherance allows us to convert this project into a responsive site with much less future work. I.E. all images are placed into the grid rather than hard coded with a pixel width value.
-* A sprite sheet has been created to handle the various icons in this design. If SVGs were available it would be prefered to create a custom icon-font using [font-custom.com](http://font-custom.com/). This method would allow for great flexibility (change icon color, add text shadow etc) and would provide 'retina' support for hi-DPI devices.
-*

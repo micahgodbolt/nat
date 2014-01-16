@@ -9,6 +9,7 @@
       <title>Crispin & Mulberry - World Travelers</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=1000, initial-scale=1">
+      <link rel="icon" href="favicon.ico">
       <link rel="stylesheet" href="stylesheets/screen.css">
       <script src="js/modernizr.js"></script>
   </head>
