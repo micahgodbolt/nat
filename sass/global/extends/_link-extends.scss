@@ -21,8 +21,11 @@
 %main-nav-link {
   display: block;
   font-size: $nav-font-size;
+  font-weight: bold;
   text-transform: uppercase;
-  color: $grey;
+  // mockup calls for 80% opacity
+  color: lighten($black, 20%);
+  letter-spacing: 1px;
   @include text-shadow(1px 1px 1px rgba($white,.4));
 }
 

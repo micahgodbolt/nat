@@ -17,8 +17,8 @@
     border-top: 1px solid #bdbdbd;
     border-bottom: 1px solid #bdbdbd;
     &:hover {
-      background: darken($light-grey,5%); // fallback
-      background: rgba($black, .1);
+      background: darken($light-grey,10%); // fallback
+      background: rgba($black, .2);
     }
     &.active {
       border-left: 1px solid #bdbdbd;

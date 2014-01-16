@@ -9,7 +9,7 @@ We use Sass to give structure, order, and power to our stylesheets. This documen
 2. ```sudo gem install bundler``` to install the gem package manager
 3. Navigate to the project via your command line and run ```bundle install```. This will download all of the required gems for the project
 4. From that same directory, run ```compass watch``` to start compiling Sass into css.
-
+5. To enable Chrome 'sourcemaps' use this more vurbose command instead ```sudo sass --compass --sourcemap --watch sass/screen.scss:stylesheets/screen.css```
 ### File Organization
 * **img/sprites** - All png's placed into this folder get compiled into a singular sprite sheet, and Compass calculates the necessary background-position to use each one.
 * **partials** - HTML components are broken up into php partials with similar naming to the Sass components mentioned below. This provides a clear picture of the site's region structure and allows for easier editing of each piece of component code.
@@ -35,6 +35,6 @@ We use Sass to give structure, order, and power to our stylesheets. This documen
 * Decorative extends like image borders/rounded corners and box styles, like sidebar block backgrounds and borders, can also be found in the extends folder. This way it does not matter if we are applying this style to all of the sidebar blocks at once, or if we are applying it in every sidebar component partial, the styles can always be modified in the same place.
 
 ### Project Considerations
-* While 'pixels perfection' is an ideal to be strived for, small provisions were made in order to adhere to a 10 column grid. This adherance allows us convert this project into a responsive site with much less future work. I.E. all images are placed into the grid rather than hard coded with a pixel width value.
+* While 'pixels perfection' is an ideal to be strived for, small provisions were made in order to adhere to a 10 column grid. This adherance allows us to convert this project into a responsive site with much less future work. I.E. all images are placed into the grid rather than hard coded with a pixel width value.
 * A sprite sheet has been created to handle the various icons in this design. If SVGs were available it would be prefered to create a custom icon-font using [font-custom.com](http://font-custom.com/). This method would allow for great flexibility (change icon color, add text shadow etc) and would provide 'retina' support for hi-DPI devices.
 *

@@ -1,0 +1,99 @@
+$extends:
+  inverted-title,
+  sidebar-title,
+  secondary-title,
+  hero-primary-title,
+  hero-secondary-title,
+  standard-copy,
+  helper-text-copy,
+  checkbox-text-copy,
+  copy-links,
+  heavy-copy-links,
+  main-nav-link,
+  video-link
+  ;
+
+$colors: black, grey, medium-grey, light-grey, white, primary-color;
+
+
+
+.styleguide {
+  .text-styles {
+    float: left;
+    width: 49%;
+    margin-right: 1%;
+    padding-bottom: pem(100);
+  }
+  .color-styles {
+    float: left;
+    width: 50%;
+  }
+  .style {
+    margin: 20px 0;
+  }
+  .label {
+    display: inline-block;
+    margin: pem(20) 0;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    color: white;
+    background: $black;
+  }
+  .color {
+    padding: pem(20);
+    margin-bottom: pem(20);
+  }
+
+
+  @each $extend in $extends{
+    .#{$extend} {
+      @extend %#{$extend};
+      &:before {
+        content: "#{$extend}";
+      }
+    }
+  }
+  // @TODO convert colors to a MAP and automate this list of colors
+  .black {
+    color: white;
+    background: $black;
+    &:before {
+      content: "$black is #{$black}"
+    }
+  }
+  .grey {
+    background: $grey;
+    &:before {
+      content: "$grey is #{$grey}"
+    }
+  }
+  .medium-grey {
+    background: $medium-grey;
+    &:before {
+      content: "$medium-grey is #{$medium-grey}"
+    }
+  }
+  .light-grey {
+    background: $light-grey;
+    &:before {
+      content: "$light-grey is #{$light-grey}"
+    }
+  }
+  .white {
+    background: $white;
+    &:before {
+      content: "$white is #{$white}"
+    }
+  }
+  .primary-color {
+    background: $primary-color;
+    &:before {
+      content: "$primary-color is #{$primary-color}"
+    }
+  }
+}
+
+.search-links {
+  // hide from the page, no need to have it on here
+  display: none;
+}
