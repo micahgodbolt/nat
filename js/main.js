@@ -1,5 +1,6 @@
 $( document ).ready(function() {
   var currentSlide = 1;
+  var numberOfSlides = $('.slider-navigation li').length;
 
   function changeSlideTo(slideNumber) {
     $('.slider-items .active').removeClass('active');
@@ -9,7 +10,7 @@ $( document ).ready(function() {
   }
 
   function incrementSlide () {
-    if (currentSlide == 4) {
+    if (currentSlide == numberOfSlides) {
       currentSlide = 1;
     }
     else {

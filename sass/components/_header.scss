@@ -8,6 +8,13 @@ header {
       position: absolute;
       right: 0;
     }
+    form {
+      display: block;
+    }
+    // @TODO find better IE7 solution here. Odd box model issue
+    .lt-ie8 & {
+      height: 26px;
+    }
   }
   .site-search {
     @extend %text-input-field;

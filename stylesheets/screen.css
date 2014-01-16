@@ -707,6 +707,10 @@ header {
     header .search-container:before {
       position: absolute;
       right: 0; }
+    header .search-container form {
+      display: block; }
+    .lt-ie8 header .search-container {
+      height: 26px; }
   header .logo {
     text-indent: 100%;
     white-space: nowrap;
@@ -955,8 +959,7 @@ header {
   background: #0084d9; }
   .styleguide .primary-color:before {
     content: "$primary-color is #0084d9"; }
-
-.search-links {
+.styleguide .search-links {
   display: none; }
 
 .current-contests .contests:before, .current-contests .contests:after {

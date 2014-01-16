@@ -91,9 +91,8 @@ $colors: black, grey, medium-grey, light-grey, white, primary-color;
       content: "$primary-color is #{$primary-color}"
     }
   }
-}
-
-.search-links {
-  // hide from the page, no need to have it on here
-  display: none;
+  .search-links {
+    // hide from the page, no need to have it on here
+    display: none;
+  }
 }
