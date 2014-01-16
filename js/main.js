@@ -16,7 +16,6 @@ $( document ).ready(function() {
     else {
       currentSlide = currentSlide + 1;
     }
-    console.log(currentSlide);
     changeSlideTo(currentSlide);
   }
 
