@@ -4,5 +4,11 @@ footer {
   }
   .social-links {
     @include span-columns(6 omega,12);
+    li {
+      float: right;
+    }
+    a {
+      margin-left: pem(10);
+    }
   }
 }

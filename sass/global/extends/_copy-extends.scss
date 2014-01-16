@@ -1,8 +1,22 @@
 %standard-copy {
+  // used in article text
   font-family: $copy-font-family;
   font-size: $copy-font-size;
-  font-weight: 100;
+  font-weight: 400;
   color: $black;
   line-height: $copy-line-height;
   margin-top: 0;
+}
+
+%helper-text-copy {
+  // italic text explaining form functionality
+  font-size: pem(12);
+  font-style: italic;
+  color: $black;
+}
+
+%checkbox-text-copy {
+  // text next to check boxes
+  font-size: pem(12);
+  font-weight: bold;
 }

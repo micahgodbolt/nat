@@ -1,17 +1,16 @@
 $total-columns  : 10;
-$column-width   : pem(85);
-$gutter-width   : pem(20);
+$column-width   : pem(82);
+$gutter-width   : pem(21);
 $grid-padding   : pem(20);
 
 
 // Breakpoints
 
-$small: 600px;
-$medium: 900px;
 
 //Colors
 $black: #282b2e;
 $grey: #9c9fa3;
+$medium-grey: #cac9c9;
 $light-grey: #dbdbdb;
 $white: #ffffff;
 $primary-color: #0084d9;
@@ -21,6 +20,8 @@ $sans-serif: helvetica, arial, sans-serif;
 
 //Typography
 $base-font-size: 16px;
+
+// Base Copy Styles
 $copy-font-family: $sans-serif;
 $copy-font-size: pem(14);
 $copy-line-height: 1.2;

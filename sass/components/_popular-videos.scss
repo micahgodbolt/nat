@@ -9,17 +9,25 @@
   }
   .videos li {
     margin-bottom: pem(15);
+    position: relative;
+    @include get-sprite(play-button, true);
+    &:before {
+      pointer-events:none;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 10;
+      margin-left: (image-width('sprites/play-button.png') * -.5 );
+      margin-top: (image-height('sprites/play-button.png') * -.5 );
+    }
   }
-  .video {
-    display: block;
+  .video, img {
+    display: block; // anchor tag and image needs to be display block;
   }
   .description {
+    @extend %video-link;
+    @extend %image-overlay;
     line-height: pem(40,13);
-    font-size: pem(13);
     padding: 0 pem(15);
-    background: $white;
-    background: rgba($white, .7);
-    color: $black;
-    font-weight: bold;
   }
 }

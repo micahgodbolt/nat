@@ -1,6 +1,10 @@
 .newsletter-signup {
   @extend %sidebar-box;
   @include clearfix;
+  .lt-ie8 & {
+    // @TODO fix bug making clearfix not work. had to hard code the height for IE7
+    height: 220px;
+  }
   .title {
     @extend %sidebar-title;
     @include get-sprite(envelope, true, 1);
@@ -9,44 +13,46 @@
   .email-field {
     @extend %text-input-field;
     margin-bottom: pem(16);
+    .lt-ie8 & {
+      // IE7 does not use border-box box model, so this needs to shrink to fit
+      width: 90%;
+    }
   }
   .form-options {
-    background: #cac9c9;
+    background: $medium-grey;
     padding: pem(10);
     margin-bottom: pem(10);
   }
   .directions {
+    @extend %helper-text-copy;
+    // reset some of the p tag margins
     margin: 0 0 pem(12);
-    font-size: pem(12);
-    font-style: italic;
+  }
+  input[type="checkbox"] {
+    @extend %horizontal-checkbox;
   }
   label {
-    margin-left: pem(8);
-    font-size: pem(12);
-    font-weight: bold;
-    line-height: 1.8;
+    @extend %checkbox-text-copy;
   }
   button {
-    float: right;
     @include button($primary-color);
+    float: right;
   }
 }
 
 .disclaimer {
-  background: #cac9c9;
+  background: $medium-grey;
   text-align: center;
-  border-top: 1px solid #969696;
+  border-top: 1px solid $grey;
   padding: pem(6) 0 pem(3);
   margin-bottom: pem(20);
   ul {
     display: inline-block;
     @extend %reset-list;
-    @extend %horizontal-list;
-    li {
-      border-color: $black;
-    }
-    a {
-      color: $black;
+    @extend %horizontal-list-dark;
+    .lt-ie8 & {
+      // center align technique doesn't work in IE7. Give some padding to align left properly
+      padding-left: pem(10);
     }
   }
 }

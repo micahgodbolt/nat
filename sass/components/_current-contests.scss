@@ -1,16 +1,19 @@
 .current-contests {
   @extend %sidebar-box;
-  @include clearfix;
   margin-bottom: pem(20);
   .title {
     @extend %sidebar-title;
     @include get-sprite(trophy, true, 2);
     margin-bottom: pem(15);
   }
+  .contests {
+    // @TODO better solution needed for IE7 bug, had to give fixed height for now
+    .lt-ie8 &{
+      height: 110px;
+    }
+  }
   .contest {
-    @include clearfix;
     margin-bottom: pem(10);
-    clear: both;
     &:last-child {
       margin-bottom: 0;
     }
@@ -19,6 +22,7 @@
     @extend %heavy-copy-links;
   }
   .contest-description {
-    margin: 0 0 pem(10);
+    // removing some of the p margin, setting bottom
+    margin-bottom: 0 0 pem(10);
   }
 }

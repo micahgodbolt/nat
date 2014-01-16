@@ -1,29 +1,13 @@
-// <a href="#" class="logo">Crispin & Mulberry <span class="tag-line">World Travelers</span></a>
-// <aside class="search-links">
-//   <div class="search-container">
-//     <form>
-//       <input class="site-search" placeholder="search">
-//     </form>
-//   </div>
-//   <nav class="secondary-links">
-//    <ul>
-//      <li><a href="#" class="navigation-link">My Account</a></li>
-//      <li><a href="#" class="navigation-link">My Subscriptions</a></li>
-//      <li><a href="#" class="navigation-link">My Articles</a></li>
-//    </ul>
-
-//   </nav>
-// </aside>
-
-
 header {
   position: relative;
-  .search-container {
-    width: pem(260);
-  }
+  // did not follow grid, so magic number layout
   .search-links {
     position: absolute;
     right: 0;
     top: pem(30);
+  }
+  .search-container {
+    // magic number to match mock
+    width: pem(260);
   }
 }

@@ -2,10 +2,7 @@
   .title {
     @extend %inverted-title;
     @extend %inverted-title-offset;
-    @include get-sprite(folder, true);
-    &:before {
-      top: pem(2);
-    }
+    @include get-sprite(folder, true, 2);
   }
   .section-title {
     @extend %secondary-title;

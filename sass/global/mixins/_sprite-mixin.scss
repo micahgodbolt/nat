@@ -11,6 +11,7 @@
     }
   }
   @else {
+    // if $icon is false, this is a simple image replacement, i.e. site logo
     @extend .sprites-#{$name};
     @include get-img-size('sprites/#{$name}.png');
   }

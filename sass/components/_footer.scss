@@ -9,9 +9,11 @@ footer {
     @extend %horizontal-list;
   }
   .footer-info{
+    clear: both;
     @extend %reset-list;
     @extend %horizontal-list;
     li {
+      // override the horizontal-list colors
       color: $grey;
       border-color: $grey;
     }
@@ -22,12 +24,8 @@ footer {
   ul {
     padding-top: pem(7); // little fudge for vertical centering
     @extend %reset-list;
-    li {
-      float: right;
-    }
     a {
       @include hide-text();
-      margin-left: pem(10);
     }
     .social-facebook {
       @include get-sprite(facebook);

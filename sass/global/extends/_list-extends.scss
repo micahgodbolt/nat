@@ -1,10 +1,11 @@
 %horizontal-list {
+  // list of items, layed out horizontaly with borders in between them
   font-size: $nav-font-size;
   font-weight: normal;
   @include clearfix();
   margin: 0;
   li {
-    font-weight: 100;
+    font-weight: 400;
     color: $white;
     float: left;
     padding: 0 10px;
@@ -18,12 +19,30 @@
     }
   }
   a {
-    color: inherit;
+    color: $white;
+    &:hover {
+      color: $light-grey;
+    }
   }
 }
 
+%horizontal-list-dark {
+  // dark text version of horizontal-list
+  @extend %horizontal-list;
+  li {
+    color: $black;
+    border-right-color: $black;
+  }
+  a {
+    color: $black;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
 
 %reset-list {
+  // removes margins, padding, and list style, links decoration of lists. Great for navigation
   margin: 0;
   list-style: none;
   padding-left: 0;

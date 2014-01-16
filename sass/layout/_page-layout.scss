@@ -1,43 +1,29 @@
 .page {
-  max-width: pem(1000);
+  width: pem(1000); // change to max-width to start building responsive layouts
   margin: 0 auto;
 }
 
-header {
-}
-
-nav {
-
-}
-
-.hero {
-  @include container;
-  .hero-slider {
-    @include span-columns(7);
-  }
-  .ad-block {
-    @include span-columns(3 omega);
-  }
-}
-
+// container for main and sidebar content
 .content {
   @include container;
 }
 
+// container for all main content
 .main-content {
   @include span-columns(7);
-  .browse-categories {
-    @include span-columns(2,7);
-  }
-  .recent-articles {
-    @include span-columns(5 omega,7);
-  }
-  .popular-videos {
-    clear: both
-  }
 }
 
-.secondary-content {
+.main-content-related {
+  @include span-columns(2,7);
+}
+.main-content-primary {
+  @include span-columns(5 omega,7);
+}
+.main-content-tertiary {
+  clear: both
+}
+
+.sidebar-content {
   @include span-columns(3 omega);
 }
 

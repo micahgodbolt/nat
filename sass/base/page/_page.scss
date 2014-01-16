@@ -4,16 +4,7 @@
   background-size: cover;
 }
 
-.page {
-
-}
-
-header {
-}
-
-nav {
-}
-
+// slider and ad container
 .hero {
   background: #fff;
   padding: pem(20) 0;
@@ -27,25 +18,14 @@ nav {
     height: 1px;
     position: absolute;
   }
-   .hero-slider {
-  }
-  .ad-block {
+  .lt-ie8 & {
+    clear: both;
   }
 }
 
+// main and sidebar content container
 .content {
   padding-top: pem(20);
-  background: #fff;
-}
-
-.main-content {
-  .browse-categories {
-  }
-  .recent-articles {
-  }
-}
-
-.secondary-content {
   background: #fff;
 }
 

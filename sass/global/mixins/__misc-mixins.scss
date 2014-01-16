@@ -13,11 +13,6 @@
   display: block;
 }
 
-@mixin get-img-size($img) {
-  height: image-height($img);
-  width: image-width($img);
-}
-
 @mixin clearfix {
   &:before, &:after {
       content: "\0020";

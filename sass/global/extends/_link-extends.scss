@@ -1,17 +1,36 @@
 %copy-links {
   font-size: $copy-font-size;
   color: $black;
-  font-weight: 100;
+  font-weight: 400;
   &:hover {
     color: $primary-color;
   }
 }
 
 %heavy-copy-links {
+  // i.e. current contests links
   font-size: pem(12);
   color: $black;
   text-decoration: none;
   font-weight: 600;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+%main-nav-link {
+  display: block;
+  font-size: $nav-font-size;
+  text-transform: uppercase;
+  color: $grey;
+  @include text-shadow(1px 1px 1px rgba($white,.4));
+}
+
+%video-link {
+  // i.e. popular video links
+  font-size: pem(13);
+  color: $black;
+  font-weight: bold;
   &:hover {
     color: $primary-color;
   }

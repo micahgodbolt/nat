@@ -1,30 +1,12 @@
-// <a href="#" class="logo">Crispin & Mulberry <span class="tag-line">World Travelers</span></a>
-// <aside class="search-links">
-//   <div class="search-container">
-//     <form>
-//       <input class="site-search" placeholder="search">
-//     </form>
-//   </div>
-//   <nav class="secondary-links">
-//    <ul>
-//      <li><a href="#" class="navigation-link">My Account</a></li>
-//      <li><a href="#" class="navigation-link">My Subscriptions</a></li>
-//      <li><a href="#" class="navigation-link">My Articles</a></li>
-//    </ul>
-
-//   </nav>
-// </aside>
-
 header {
   padding: pem(20) 0;
   .search-container {
     position: relative;
-    &:after {
-      content: "";
-      @include get-sprite(search);
+    @include get-sprite(search, true, 7);
+    // move search icon to right side
+    &:before {
       position: absolute;
-      top: pem(7);
-      right: pem(7);
+      right: 0;
     }
   }
   .site-search {
@@ -33,6 +15,7 @@ header {
   .logo {
     @include hide-text;
     @include get-sprite(logo);
+    // anchor tag needs to be block
     display: block;
   }
   .secondary-links ul{

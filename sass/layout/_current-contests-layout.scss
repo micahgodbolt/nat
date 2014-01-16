@@ -1,4 +1,10 @@
 .current-contests {
+  .contests {
+    @include clearfix;
+  }
+  .contest {
+    clear: both;
+  }
   .contest-image {
     @include span-columns(1,3);
   }
